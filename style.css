@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+html {
+    scroll-behavior:smooth;
+  }
+#title{
+    width: 100%;
+    height:76vh;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 416px;
+  }
+}
+h2,h3{
+  color: #3D3A4B;
+}
+
+ h2{
+    font-weight: 900;
+    font-size: 40px;
+    font-family: "Julius Sans One", sans-serif;
+  }
+/* Style for the p tag typing effect */
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white; /* Cursor effect */
+  animation: typing 3s steps(30) 0.1s forwards, blink 0.75s step-end infinite;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.flexbox, .navbar{
+    margin-left: 15%;
+    margin-right: 15%;    
+}
+
+  #title, #footer{
+    background: linear-gradient(-45deg, #001A6E, #FAB12F, #81BFDA, #4B0082 );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #F0F0F0;
+    height: 55vh;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.flexbox h1{
+    font-size: 45px;
+    font-weight: 400;
+    font-family: "IBM Plex Mono", monospace;
+
+}
+
+.flexbox h3{
+    font-size: 18px;
+    font-weight: 300;
+    color: #F0F0F0;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.navbar{    
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 20px;
+    --bs-navbar-brand-margin-end: 0rem;
+
+}
+.navbar div{
+    padding: 0px;
+}
+
+#navbarsExample09 > ul > li:nth-child(1) > a{
+    padding-left: 0px;
+}
+.dropdown-menu.dropdown-transparent {
+  background-color: transparent;
+  border: none; /* Optional: Remove the border if needed */
+  box-shadow: none; /* Remove shadow if you don't want it */
+}
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.477); /* Adjust for readability */
+
+}
+.dropdown-item:hover {
+  color: white;
+  background-color: transparent;
+}
+.nav-item{
+  color: rgba(255, 255, 255, 0.477); /* Adjust for readability */
+
+}
+.nav-item:hover{
+  color: white;
+}
+
+
+.b-example-divider {
+    /* width: 100%; */
+    height: .3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+ 
+  #about{
+    padding-left: 15%;
+    padding-right: 15%; 
+    background-color: #81BFDA32;
+    min-height: 80vh;
+}
+  #about h2{
+    color: #3D3A4B;
+  }
+  #about span{
+    color: #3D3A4B;
+
+  }
+  #my-skills h2,span{
+    color: #1D2E61;
+  }
+
+  p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    word-spacing: 10px;
+  }
+
+  span{
+    font-weight: 600;
+  }
+
+  #about img{
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 150px;
+    display: block;
+    margin-top: 70px;
+  }
+
+
+
+
+#my-skills h2,span{
+    color: #3D3A4B;
+}
+#my-skills {
+  background-color:#4B008216;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+/* .card-header{
+  
+
+} */
+#my-skills img{
+    height: 80px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.grid2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center; /* Align horizontally */
+  align-items: center; /* Align vertically */
+  margin: 10px;
+  text-align: center;
+}
+
+.grid2x2 img {
+  display: block;
+  margin: 30px auto; /* Center the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+  border-radius: 10px; /* Optional: add rounded corners */
+
+}
+
+.grid2x2 img:hover {
+  transform: scale(1.2); /* Slightly enlarge the image */
+
+}
+.box{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover{
+  transform: scale(1.2); /* Slightly enlarge the image */
+
+}
+
+.row {
+  display: flex;
+  gap: 20px; /* Add spacing between cards */
+}
+
+.col-lg-6 {
+  flex: 1; /* Ensure equal width for columns */
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  height: 100%; /* Match the height of the tallest card */
+  border: 2px solid #ccc; /* Thicker border for the card */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px; /* Add padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  
+
+}
+.card p{
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card-header {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  background-color: white !important;
+  color:#3D3A4B;
+  text-shadow: 0px 2px 2px rgba(36, 36, 36, 0.2);
+  font-weight: bold;
+  background-color: #f0f0f0; /* Light gray background for the header */
+  padding: 15px; /* Add padding for the header row */
+  border-bottom: 2px solid #ccc; /* Thicker border for the header row */
+  border-radius: 10px 10px 0 0; /* Rounded corners at the top */
+}
+
+#my-projects h2,span{
+  color: #3D3A4B;
+}
+#my-projects {
+background-color:#FAB12F26;
+padding-left: 15%;
+padding-right: 15%;
+}
+
+h3{
+  font-weight: 900;
+  font-size: 30px;
+  font-family: "Julius Sans One", sans-serif;
+  color: #3D3A4B ;
+}
+
+#contact{
+  padding: 0px 15%;
+  background-color: #81BFDA16;
+  padding-bottom: 80px;
+
+}
+
+#contact .container{
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 50px; /* Optional: Add space between items */
+ /* Optional: Center vertically relative to the full viewport height */
+ margin-bottom: 5pt;
+}
+
+#footer p{
+  font-size:medium;
+  color: white !important;
+  /* box-shadow: #3D3A4B; */
+  padding: 0;
+  margin: 0;
+}
